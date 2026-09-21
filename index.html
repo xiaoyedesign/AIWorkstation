@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CXG·AI个人站 · 首页</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="site-in wrap">
+  <a class="mark" href="index.html" aria-label="首页">
+    <img src="assets/logo.png" alt="CXG·AI个人站">
+  </a>
+  <div>
+    <h1><a href="index.html">CXG·AI个人站</a></h1>
+    <div class="sub">Agnes Image 2.5 Flash · Agnes Video 2.5 Flash</div>
+  </div>
+  <div class="right"></div>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="hero">
+    <div class="eyebrow">CREATIVE SUITE</div>
+    <h2>图像与视频，<span class="acc">一键生成</span></h2>
+    <p>多 Key 智能路由，自动选用响应最快的节点。支持正 / 负向提示词、参考图生成。当前所有输出档位免费。</p>
+  </section>
+
+  <section class="cards">
+    <a class="tool-card" href="image.html">
+      <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="9" cy="9" r="2.2"/><path d="M21 15l-5.2-5.2a1.6 1.6 0 0 0-2.3 0L3 20"/></svg></div>
+      <h3>图像生成</h3>
+      <p>Agnes Image 2.5 Flash · 文生图、图生图与多图合成，输出 1K–4K 任意档位与画幅。</p>
+      <div class="taglist">
+        <span>文生图</span><span>图生图</span><span>多图合成</span><span>1K–4K</span><span>正负提示词</span>
+      </div>
+      <div class="go">进入图像工坊 →</div>
+    </a>
+
+    <a class="tool-card" href="video.html">
+      <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="14" height="14" rx="2.5"/><path d="M16 10l6-3.5v11L16 14"/></svg></div>
+      <h3>视频生成</h3>
+      <p>Agnes Video 2.5 Flash · 文生视频与图生视频（首尾帧 / 图片参考），内置常见视频风格。</p>
+      <div class="taglist">
+        <span>文生视频</span><span>图生视频</span><span>首尾帧</span><span>720P</span><span>风格预设</span>
+      </div>
+      <div class="go">进入视频工坊 →</div>
+    </a>
+  </section>
+
+  <section class="links">
+    <div class="head">
+      <h3>// 推荐连接</h3>
+      <span class="sub">外部创作平台 · 点击在新标签页打开</span>
+    </div>
+    <div class="link-grid">
+      <a class="link-card" href="https://www.liblib.art" target="_blank" rel="noopener noreferrer">
+        <div class="link-name">LiblibAI</div>
+        <div class="link-desc">AI 绘画模型社区与在线生图平台</div>
+        <div class="link-url">www.liblib.art ↗</div>
+      </a>
+      <a class="link-card" href="https://modelscope.cn/my/overview" target="_blank" rel="noopener noreferrer">
+        <div class="link-name">ModelScope 魔搭</div>
+        <div class="link-desc">模型库与算力资源 · 我的总览</div>
+        <div class="link-url">modelscope.cn ↗</div>
+      </a>
+      <a class="link-card" href="https://tusi.cn/" target="_blank" rel="noopener noreferrer">
+        <div class="link-name">吐司 tusi</div>
+        <div class="link-desc">AI 创作工具与工作流平台</div>
+        <div class="link-url">tusi.cn ↗</div>
+      </a>
+    </div>
+  </section>
+</main>
+
+<footer class="site wrap">
+  <div class="mono">agnes-image-2.5-flash · agnes-video-2.5-flash · apihub.agnes-ai.com</div>
+  <div style="margin-top:4px">API Key 保存在浏览器本地，仅用于向 Agnes AI 接口发起请求。部署到 GitHub Pages 后所有页面均可直接使用。</div>
+</footer>
+
+<script src="assets/common-v3.js"></script>
+<script>
+  AgnesCommon.renderShell("home", 0);
+  document.addEventListener("DOMContentLoaded", function(){
+    var keys = AgnesCommon.loadKeys();
+    document.querySelectorAll("#keyCount").forEach(function(el){ el.textContent = keys.length; });
+  });
+</script>
+</body>
+</html>
